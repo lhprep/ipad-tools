@@ -8,7 +8,7 @@ while true; do
 
   (idevicepair pair &&
   ideviceinfo | grep "^SerialNumber" >> serials.txt &&
-  ideviceactivation activate &&
+  idevicediagnostics shutdown &&
   echo "Done" ) ||
   continue
 
